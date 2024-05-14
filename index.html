@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Counter App/style.css" />
+    <title>BlackJack App</title>
+  </head>
+  <body class="bg-[#016f32] text-white text-center font-myFont font-bold flex flex-col justify-center items-center h-dvh">
+    <h1 class="text-myColor text-4xl mb-8">BlackJack</h1>
+    <p id="message-el" class="italic">Want to play a round?</p>
+    <p id="warning-el"></p>
+    <p id="cards-el" class="m-4">Cards:</p>
+    <p id="sum-el" class="m-2">Sum:</p>
+    <div class="m-4">
+      <button
+        id="button-el"
+        class="bg-myColor w-40 p-1 rounded text-[#016f32] hover:scale-105 m-0.5"
+        onclick="startGame()"
+      >
+        START GAME
+      </button>
+      <button
+        class="bg-myColor w-40 p-1 rounded text-[#016f32] hover:scale-105 
+        m-0.5"
+        onclick="newCard()"
+      >
+        NEW CARD
+      </button>
+    </div>
+    <p id="player-el" class="m-4"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
