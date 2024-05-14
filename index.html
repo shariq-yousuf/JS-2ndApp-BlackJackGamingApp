@@ -3,10 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Counter App/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              myColor: "goldenrod",
+            },
+            fontFamily: {
+              myFont: [
+                "Trebuchet MS",
+                "Lucida Sans Unicode",
+                "Lucida Grande",
+                "Lucida Sans",
+                "sans-serif",
+              ],
+            },
+          },
+        },
+      };
+    </script>
     <title>BlackJack App</title>
   </head>
-  <body class="bg-[#016f32] text-white text-center font-myFont font-bold flex flex-col justify-center items-center h-dvh">
+  <body
+    class="bg-[#016f32] text-white text-center font-myFont font-bold flex flex-col justify-center items-center h-dvh"
+  >
     <h1 class="text-myColor text-4xl mb-8">BlackJack</h1>
     <p id="message-el" class="italic">Want to play a round?</p>
     <p id="warning-el"></p>
@@ -21,8 +43,7 @@
         START GAME
       </button>
       <button
-        class="bg-myColor w-40 p-1 rounded text-[#016f32] hover:scale-105 
-        m-0.5"
+        class="bg-myColor w-40 p-1 rounded text-[#016f32] hover:scale-105 m-0.5"
         onclick="newCard()"
       >
         NEW CARD
